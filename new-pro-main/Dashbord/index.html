@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SMART STORE</title>
+
+        <!-- link file fontAwesome -->
+        
+        <link rel="stylesheet" href="fontAwesome/css/all.css"/>
+
+        <!-- link File Swiper css -->
+        <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css">
+
+        <!-- Link File CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+
+        <div class="notfcation">
+            <span><i onclick="showSecTogle('.drobdwon')" id="bell-btn" class="fa-solid fa-bell"></i></span>
+            <ul class="drobdwon">
+                <li>Annulés <span>3</span></li>
+                <li>Retournés <span>2</span></li>
+                
+            </ul>
+        </div>
+
+        <div class="side-bar">
+            <a href="#" class="logo"><span>SMART <br>STORE</span></a>
+           
+                <ul class="side-links">
+                    <li class="active"><a href="#"><i class="fa-solid fa-house"></i>Tableau de bord</a></li>
+                    <li><a href="elaksam.html"><i class="fa-solid fa-shop"></i>Interface boutique</a></li>
+                   
+                </ul>
+           
+        </div>
+
+        
+        <div class="contanier">
+            <div class="top-sec">
+                <h4>Tableau de bord</h4>
+
+            </div>
+
+            <div class="cont-fulid">
+                <div class="boxs">
+
+
+                    <div class="box active">
+             
+                            <div class="row">
+                               
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                
+                            </div>
+                            <h4>commandes</h4>
+             
+                    </div>
+
+                    <div class="box">
+                     
+                            <div class="row">
+                                
+                                <i class="fa-regular fa-calendar-check"></i>
+                                
+                            </div>
+                            <h4>Commandé</h4>
+
+                      
+                    </div>
+
+                    <div class="box">
+                       
+                            <div class="row">
+                                
+                                <i class="fa-solid fa-list-check"></i>
+                                
+                            </div>
+                            <h4>En cours de préparation</h4>
+
+                       
+                    </div>
+
+                    <div class="box">
+                     
+                            <div class="row">
+                               
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+                                
+                            </div>
+                            <h4>En attente d'expédition</h4>
+
+                      
+                    </div>
+
+                    <div class="box">
+                      
+                            <div class="row">
+                                
+                                <i class="fa-solid fa-truck-arrow-right"></i>
+                                
+                            </div>
+                            <h4>Expédié</h4>
+
+                       
+                    </div>
+
+                    <div class="box">
+                      
+                            <div class="row">
+                               
+                                <i class="fa-solid fa-truck-fast"></i>
+                                
+                            </div>
+                            <h4>En route vers vous</h4>
+
+                    </div>
+
+                    <div class="box">
+                       
+                            <div class="row">
+                                
+                                <i class="fa-solid fa-user-check"></i>
+                                
+                            </div>
+                            <h4>Reçu</h4>
+
+                        
+                    </div>
+
+                    <div class="box">
+                    
+                            <div class="row">
+                                
+                                <i class="fa-solid fa-phone-slash"></i>
+                                
+                            </div>
+                            <h4>Ne répond pas</h4>
+
+                    
+                    </div>
+
+                    <div class="box">
+                    
+                            <div class="row">
+                                
+                                <i class="fa-solid fa-file-circle-exclamation"></i>
+                                
+                            </div>
+                            <h4>Reporté</h4>
+
+                 
+                    </div>
+                    <div class="box">
+            
+                            <div class="row">
+                                
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                
+                            </div>
+                           <h4>Adresse incorrecte</h4>
+
+              
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+
+            <div class="last-order">
+
+                <span onclick="showSec('.show-serch-order')" class="btn btn-filter">Recherche personnalisée</span>
+
+
+          
+
+                <div class="orders-section">
+
+
+
+
+                    <div class="show-serch-order">
+                        <h4 class="title-order">Rechercher une commande</h4>
+                        <i onclick="closeSec('.show-serch-order')" class="fa-solid fa-circle-xmark"></i>
+                    
+                        <form action="">
+                            <div class="all-input">
+                                <div class="inp">
+                                    <label for="">Numéro de commande</label>
+                                    <input type="text" name="" id="" placeholder="Numéro de commande">
+                                </div>
+                    
+                                <div class="inp">
+                                    <label for="">Nom du client</label>
+                                    <input type="text" name="" id="" placeholder="Nom du client">
+                                </div>
+                    
+                                <div class="inp">
+                                    <label for="">Numéro de téléphone</label>
+                                    <input type="text" name="" id="" placeholder="Numéro de téléphone">
+                                </div>
+                    
+                                <div class="inp">
+                                    <label for="">Date</label>
+                                    <input type="text" name="" id="" placeholder="Date">
+                                </div>
+                            </div>
+                            <button class="btn">Rechercher</button>
+                        </form>
+                    </div>
+                    
+
+
+
+                    <div class="show-edit-order">
+
+                        <h4 class="title-order">Modifier la commande</h4>
+                    
+                        <i onclick="closeSec('.show-edit-order')" class="fa-solid fa-circle-xmark"></i>
+                    
+                        <form action="">
+                    
+                            <div class="all-input">
+                            
+                                <div class="inp">
+                                    <label for="">Nom du client</label>
+                                    <input type="text" name="" id="" placeholder="Nom du client">
+                                </div>
+                    
+                                <div class="inp">
+                                    <label for="">Numéro de téléphone</label>
+                                    <input type="text" name="" id="" placeholder="Numéro de téléphone">
+                                </div>
+                    
+                                <div class="inp">
+                                    <label for="">Adresse</label>
+                                    <input type="text" name="" id="" placeholder="Adresse">
+                                </div>
+                    
+                                <div class="inp">
+                                    <label for="">Entrez le code promo</label>
+                                    <input type="text" name="" id="" placeholder="Numéro du coupon">
+                                </div>
+                            </div>
+                        </form>
+                    
+                    </div>
+                    
+
+                    <div class="table-edi-order">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Commandes</td>
+                                    <td>Quantité</td>
+                                    <td>Prix unitaire</td>
+                                    <td>Total</td>
+                                    <td>Supprimer</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chargeur  Samsung EP-TA800 pour charge rapide 25W, couleur noire</td>
+                                    <td><input type="number"></td>
+                                    <td>50DT</td>
+                                    <td>50DT</td>
+                                    <td><i class="fa-solid fa-trash"></i></td>
+                                </tr>
+                    
+                                <tr>
+                                    <td>Chargeur  Samsung EP-TA800 pour charge rapide 25W, couleur noire</td>
+                                    <td><input type="number"></td>
+                                    <td>50DT</td>
+                                    <td>50DT</td>
+                                    <td><i class="fa-solid fa-trash"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="table-add-order">
+                        <h5>Ajouter un produit</h5>
+                        <form action="">
+                            <div class="inp esm-montg">
+                                <div class="form-container">
+                                    <label for="product-name">Entrez le nom du produit</label>
+                                    <input type="text" id="product-name" placeholder="Entrez le nom du produit">
+                                    <br>
+                                    
+                                    <label for="quantity">Entrez la quantité</label>
+                                    <input type="number" id="quantity" placeholder="Entrez la quantité">
+                                  </div>
+                                  
+                                  <style>
+                                    .form-container {
+                                      display: flex;
+                                      flex-direction: column;
+                                      width: 300px;
+                                      margin: 0 auto;
+                                    }
+                                  
+                                    .form-container label {
+                                      margin-bottom: 5px;
+                                      font-weight: bold;
+                                    }
+                                  
+                                    .form-container input {
+                                      margin-bottom: 15px;
+                                      padding: 10px;
+                                      border: 1px solid #ccc;
+                                      border-radius: 5px;
+                                    }
+                                  
+                                    .form-container input:focus {
+                                      outline: none;
+                                      border-color: #007bff;
+                                      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+                                    }
+                                  </style>
+                                  
+                            </div>
+                    
+                            <button class="btn">Ajouter le produit</button>
+                            <div class="all-price">
+                                <p>Total : <span>200DT</span></p>
+                                <p>Frais de livraison : <span>200DT</span></p>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <button class="btn">Modifier</button>
+                    
+                    <div class="show-desc-order">
+                        <h4 class="title-order">Détails de la commande</h4>
+                        <i onclick="closeSec('.show-desc-order')" class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    
+
+
+
+
+
+                    <table>
+                       <thead>
+                        <tr>
+                  
+                            <td class="checkboxtable"><input type="checkbox"></td>
+                            <td>Numéro de commande</td>
+                                <td>Client</td>
+                                <td>Téléphone</td>
+                                <td>Statut</td>
+                                <td>Total</td>
+                                <td>Date d'ajout</td>
+                                <td>Modifier</td>
+
+                          </tr>
+                       </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="checkboxtable"><input type="checkbox"></td>
+                                <td>15</td>
+                                <td>Mahmoud</td>
+                                <td>26521249</td>
+                                <td>
+                                    <select name="elhalah" id="elwlaya">
+                                        <option disabled selected value="الولاية">Choisir le statut</option>
+                                        <option value="Commandé">Commandé</option>
+                                        <option value="En cours de préparation">En cours de préparation</option>
+                                        <option value="En attente d'expédition"></option>En attente d'expédition</option>
+                                        <option value="Expédié">Expédié</option>
+                                        <option value="En route vers vous">En route vers vous</option>
+                                        <option value="Reçu">Reçu</option>
+                                        <option value="Ne répond pas">Ne répond pas</option>
+                                        <option value="Reporté">Reporté</option>
+                                        <option value="Adresse incorrecte">Adresse incorrecte</option>
+                                        <option value="Annulé">Annulé</option>
+                                        <option value="Renvoyé">Renvoyé</option>
+                                    </select>
+                                </td>
+                                <td>500DT</td>
+                                <td>15/12/2024</td>
+                            </tr>
+                            
+                                <td><i onclick="showSec('.show-edit-order');scrltop()"  class="fa-solid fa-pen"></i>
+                                    <i onclick="showSecTogle('.show-more-info');" class="fa-solid fa-eye"></i>     
+                                </td>
+
+                          
+                                  <td class="show-more-info" colspan="8">
+                                 
+                                        <div class="div-moreinf">
+                                            <div class="more-info-order">
+                                                <p>Adresse : <span>SAHLOUL-SOUSSE</span></p>
+                                                <p>Email : <span>eniso@gmail.com</span></p>
+                                                <p>Remarque : <span></span>Livraison du produit à 17h uniquement</p>
+                                                
+                                            </div>
+
+                                            <table>
+
+                                            <thead>
+                                                <tr>
+                                                    <td colspan="2">Commandes</td>
+                                                    <td>Quantité</td>
+                                                    <td>Prix unitaire</td>
+                                                    <td>Total</td>
+                                                    
+                                                  </tr>
+
+                                               </thead>
+
+                                                <tbody class="tbdoy-desc">
+                        
+                                                      <tr>
+                                                        <td><img src="images/4.jpg" alt=""></td>
+                                                        <td>Chargeur  Samsung EP-TA800 pour charge rapide 25W, couleur noire</td>
+                                                        <td>1</td>
+                                                        <td>50DT</td>
+                                                        <td>50DT</td>
+
+                                        
+                                                        
+                        
+                                                        
+                                                      </tr>
+        
+                                                      <tr>
+                                                        <td><img src="images/3.jpg" alt=""></td>
+                                                      
+                                                        <td>Chargeur  Samsung EP-TA800 pour charge rapide 25W, couleur noire</td>
+                                                        <td>3</td>
+                                                        <td>50DT</td>
+                                                        <td>50DT</td>
+
+                                      
+                                                        
+                        
+                                                        
+                                                      </tr>
+                                                                                                                                 
+                                                </tbody>
+
+                                              </table>
+                                            
+                                        </div>
+
+                                  </td>
+
+                                  
+                                </tr>
+
+
+                                <tr>
+                                    <td class="checkboxtable"><input type="checkbox"></td>
+                                    <td>15</td>
+                                    <td>Mahmoud</td>
+                                <td>26521249</td>
+                                <td>
+                                    <select name="elhalah" id="elwlaya">
+                                        <option disabled selected value="الولاية">Choisir le statut</option>
+                                        <option value="Commandé">Commandé</option>
+                                        <option value="En cours de préparation">En cours de préparation</option>
+                                        <option value="En attente d'expédition"></option>En attente d'expédition</option>
+                                        <option value="Expédié">Expédié</option>
+                                        <option value="En route vers vous">En route vers vous</option>
+                                        <option value="Reçu">Reçu</option>
+                                        <option value="Ne répond pas">Ne répond pas</option>
+                                        <option value="Reporté">Reporté</option>
+                                        <option value="Adresse incorrecte">Adresse incorrecte</option>
+                                        <option value="Annulé">Annulé</option>
+                                        <option value="Renvoyé">Renvoyé</option>
+                                    </select>
+                                </td>
+                                <td>500DT</td>
+                                <td>15/12/2024</td>
+                                    <td><i onclick="showSec('.show-edit-order');scrltop()"  class="fa-solid fa-pen"></i>
+                                        <i onclick="showSecTogle('.show-more-info');" class="fa-solid fa-eye"></i>     
+                                    </td>
+    
+                              
+                                      <td class="show-more-info" colspan="8">
+                                     
+                                            <div class="div-moreinf">
+                                                <div class="more-info-order">
+                                                    <p>Adresse : <span>SAHLOUL-SOUSSE</span></p>
+                                                <p>Email : <span>eniso@gmail.com</span></p>
+                                                <p>Remarque : <span></span>Livraison du produit à 17h uniquement</p>
+                                                </div>
+    
+                                                <table>
+    
+                                                <thead>
+                                                    <tr>
+    
+                                                        <td colspan="2">Commandes</td>
+                                                        <td>Quantité</td>
+                                                        <td>Prix unitaire</td>
+                                                        <td>Total</td>
+                                                        
+    
+                                                      </tr>
+    
+                                                   </thead>
+    
+                                                    <tbody class="tbdoy-desc">
+                            
+                                                          <tr>
+                                                            <td><img src="images/4.jpg" alt=""></td>
+                                                            <td>Chargeur Samsung EP-TA800 pour charge rapide 25W, couleur noire</td>
+                                                            <td>1</td>
+                                                            <td>50DT</td>
+                                                            <td>50DT</td>
+
+                                            
+                                                            
+                            
+                                                            
+                                                          </tr>
+            
+                                                          <tr>
+                                                            <td><img src="images/3.jpg" alt=""></td>
+                                                          
+                                                            <td><img src="images/4.jpg" alt=""></td>
+                                                            <td>Chargeur Samsung EP-TA800 pour charge rapide 25W, couleur noire</td>
+                                                            <td>1</td>
+                                                            <td>50DT</td>
+                                                            <td>50DT</td>
+
+                                          
+                                                            
+                            
+                                                            
+                                                          </tr>
+                                                                                                                                     
+                                                    </tbody>
+    
+                                                  </table>
+                                                
+                                            </div>
+    
+                                      </td>
+    
+                                      
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="checkboxtable"><input type="checkbox"></td>
+                                        <select name="elhalah" id="elwlaya">
+                                            <option disabled selected value="الولاية">Choisir le statut</option>
+                                            <option value="Commandé">Commandé</option>
+                                            <option value="En cours de préparation">En cours de préparation</option>
+                                            <option value="En attente d'expédition"></option>En attente d'expédition</option>
+                                            <option value="Expédié">Expédié</option>
+                                            <option value="En route vers vous">En route vers vous</option>
+                                            <option value="Reçu">Reçu</option>
+                                            <option value="Ne répond pas">Ne répond pas</option>
+                                            <option value="Reporté">Reporté</option>
+                                            <option value="Adresse incorrecte">Adresse incorrecte</option>
+                                            <option value="Annulé">Annulé</option>
+                                            <option value="Renvoyé">Renvoyé</option>
+                                        </select>
+                                    </td>
+                                    <td>500DT</td>
+                                    <td>15/12/2024</td>
+                                        <td><i onclick="showSec('.show-edit-order');scrltop()"  class="fa-solid fa-pen"></i>
+                                            <i onclick="showSecTogle('.show-more-info');" class="fa-solid fa-eye"></i>     
+                                        </td>
+        
+                                  
+                                          <td class="show-more-info" colspan="8">
+                                         
+                                                <div class="div-moreinf">
+                                                    <div class="more-info-order">
+                                                        <p>Adresse : <span>SAHLOUL-SOUSSE</span></p>
+                                                        <p>Email : <span>eniso@gmail.com</span></p>
+                                                        <p>Remarque : <span></span>Livraison du produit à 17h uniquement</p>
+                                                    </div>
+        
+                                                    <table>
+        
+                                                    <thead>
+                                                        <tr>
+        
+                                                            <td colspan="2">Commandes</td>
+                                                            <td>Quantité</td>
+                                                            <td>Prix unitaire</td>
+                                                            <td>Total</td>
+                                                            
+        
+                                                          </tr>
+        
+                                                       </thead>
+        
+                                                        <tbody class="tbdoy-desc">
+                                
+                                                              <tr>
+                                                                <td><img src="images/4.jpg" alt=""></td>
+                                                                <td>Chargeur Samsung EP-TA800 pour charge rapide 25W, couleur noire</td>
+                                                                <td>1</td>
+                                                                <td>50DT</td>
+                                                                <td>50DT</td>
+    
+                                                                
+                                
+                                                                
+                                                              </tr>
+                
+                                                              <tr>
+                                                                <td><img src="images/3.jpg" alt=""></td>
+                                                              
+                                                                <td>Chargeur Samsung EP-TA800 pour charge rapide 25W, couleur noire</td>
+                                                                <td>1</td>
+                                                                <td>50DT</td>
+                                                                <td>50DT</td>
+    
+                                              
+                                                                
+                                
+                                                                
+                                                              </tr>
+                                                                                                                                         
+                                                        </tbody>
+        
+                                                      </table>
+                                                    
+                                                </div>
+        
+                                          </td>
+        
+                                          
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td class="checkboxtable"><input type="checkbox"></td>
+                                            <td>15</td>
+                                            <td>Mohamad</td>
+                                            <td>01112119676</td>
+                                            <td> 
+                                                <select name="elhalah" id="elwlaya">
+                                                    <option disabled selected value="الولاية">Choisir le statut</option>
+                                                    <option value="Commandé">Commandé</option>
+                                                    <option value="En cours de préparation">En cours de préparation</option>
+                                                    <option value="En attente d'expédition"></option>En attente d'expédition</option>
+                                                    <option value="Expédié">Expédié</option>
+                                                    <option value="En route vers vous">En route vers vous</option>
+                                                    <option value="Reçu">Reçu</option>
+                                                    <option value="Ne répond pas">Ne répond pas</option>
+                                                    <option value="Reporté">Reporté</option>
+                                                    <option value="Adresse incorrecte">Adresse incorrecte</option>
+                                                    <option value="Annulé">Annulé</option>
+                                                    <option value="Renvoyé">Renvoyé</option>
+                                                </select>
+                                            </td>
+                                            <td>500DT</td>
+                                            <td>15/12/2024</td>
+                                            <td><i onclick="showSec('.show-edit-order');scrltop()"  class="fa-solid fa-pen"></i>
+                                                <i onclick="showSecTogle('.show-more-info');" class="fa-solid fa-eye"></i>     
+                                            </td>
+            
+                                      
+                                              <td class="show-more-info" colspan="8">
+                                             
+                                                    <div class="div-moreinf">
+                                                        <div class="more-info-order">
+                                                            <p>Adresse : <span>SAHLOUL-SOUSSE</span></p>
+                                                        <p>Email : <span>eniso@gmail.com</span></p>
+                                                        <p>Remarque : <span></span>Livraison du produit à 17h uniquement</p>
+                                                        </div>
+            
+                                                        <table>
+            
+                                                        <thead>
+                                                            <tr>
+            
+                                                                <td colspan="2">Commandes</td>
+                                                            <td>Quantité</td>
+                                                            <td>Prix unitaire</td>
+                                                            <td>Total</td>
+            
+                                                              </tr>
+            
+                                                           </thead>
+            
+                                                            <tbody class="tbdoy-desc">
+                                    
+                                                                  <tr>
+                                                                    <td><img src="images/4.jpg" alt=""></td>
+                                                                    <td>Chargeur Samsung EP-TA800 pour charge rapide 25W, couleur noire</td>
+                                                                    <td>2</td>
+                                                                    <td>100DT</td>
+                                                                    <td>100DT</td>
+        
+                                                    
+                                                                    
+                                    
+                                                                    
+                                                                  </tr>
+                    
+                                                                  <tr>
+                                                                    <td><img src="images/3.jpg" alt=""></td>
+                                                                  
+                                                                      <td>Chargeur Samsung EP-TA800 pour charge rapide 25W, couleur noire</td>
+                                                                        <td>3</td>
+                                                                        <td>150DT</td>
+                                                                        <td>150DT</td>
+    
+                                                                    
+                                    
+                                                                    
+                                                                  </tr>
+                                                                                                                                             
+                                                            </tbody>
+            
+                                                          </table>
+                                                        
+                                                    </div>
+            
+                                              </td>
+            
+                                              
+                                            </tr>
+                                
+                        
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+      <script src="C:\Users\user\OneDrive\Bureau\new-pro-main\new-pro-main\Dashbord\js\main.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+  body,
+  html {
+      width: 100%;
+  }
+  
+  
+  body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Classe pour la vidéo de fond */
+    .main {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Vidéo en arrière-plan */
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Pour s'assurer que la vidéo couvre tout l'écran */
+      z-index: -1; /* Place la vidéo derrière tout le contenu */
+    }
+
+    /* Contenu affiché par-dessus la vidéo */
+    .content {
+      position: relative;
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px; /* Réduction de l'espace entre les champs */
+    width: 600px; /* Taille réduite du formulaire */
+    padding: 15px; /* Marges intérieures réduites */
+    background-color: #7bb6e7;
+    border-radius: 20px; /* Coins légèrement arrondis */
+    position: absolute; /* Pour le centrer */
+    top: 50%; /* Centrage vertical */
+    left: 50%; /* Centrage horizontal */
+    transform: translate(-50%, -50%); /* Ajustement pour un centrage parfait */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Optionnel : pour une meilleure apparence */
+    
+}
+.form input
+ {
+    height: 40px; /* Hauteur fixe */
+    width: 100%; /* Prend toute la largeur du formulaire */
+    border: 1px solid #ccc; /* Bordure fine */
+    border-radius: 5px; /* Coins légèrement arrondis */
+    padding: 0 10px; /* Espacement interne */
+    font-size: 14px; /* Taille du texte */
+    box-sizing: border-box; /* Inclut les bordures dans les dimensions */
+    
+}
+
+
+
+        
+        .title {
+          font-size: 28px;
+          color: royalblue;
+          font-weight: 600;
+          letter-spacing: -1px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding-left: 30px;
+        }
+        
+        .title::before,.title::after {
+          position: absolute;
+          content: "";
+          height: 16px;
+          width: 16px;
+          border-radius: 50%;
+          left: 0px;
+          background-color: royalblue;
+        }
+        
+        .title::before {
+          width: 18px;
+          height: 18px;
+          background-color: royalblue;
+        }
+        
+        .title::after {
+          width: 18px;
+          height: 18px;
+          animation: pulse 1s linear infinite;
+        }
+        
+        .message, .signin {
+          color: rgba(88, 87, 87, 0.822);
+          font-size: 14px;
+          padding-left: 30px ;
+        }
+        
+        .signin {
+          text-align: center;
+        }
+        
+        .signin a {
+          color: rgb(249, 6, 6);
+        }
+        
+        .signin a:hover {
+          text-decoration: underline royalblue;
+        }
+        
+        .flex {
+          display: flex;
+          width: 92%;
+          gap: 30px;
+        }
+        
+        .form label {
+          position: relative;
+        }
+        
+        .form label .input {
+          width: 90%;
+          padding: 10px 10px 20px 10px;
+          outline: 0;
+          border: 1px solid rgba(105, 105, 105, 0.397);
+          border-radius: 10px;
+        }
+        
+        .form label .input + span {
+          position: absolute;
+          left: 10px;
+          top: 15px;
+          color: grey;
+          font-size: 0.9em;
+          cursor: text;
+          transition: 0.3s ease;
+        }
+        
+        .form label .input:placeholder-shown + span {
+          top: 15px;
+          font-size: 0.9em;
+        }
+        
+        .form label .input:focus + span,.form label .input:valid + span {
+          top: 30px;
+          font-size: 0.7em;
+          font-weight: 600;
+        }
+        
+        .form label .input:valid + span {
+          color: green;
+        }
+        
+        .submit {
+          border: none;
+          outline: none;
+          background-color: royalblue;
+          padding: 10px;
+          border-radius: 10px;
+          color: #9284f6;
+          font-size: 16px;
+          transform: .3s ease;
+          width: 544px;
+        }
+        
+        .submit:hover {
+          background-color: rgb(48, 38, 228);
+        }
+        
+        @keyframes pulse {
+          from {
+            transform: scale(0.9);
+            opacity: 1;
+          }
+        
+          to {
+            transform: scale(1.8);
+            opacity: 0;
+          }
+        }</style>
+</head>
+<body>
+    <main class="main">
+        <video class="background-video" autoplay muted loop>
+          <source src="new pho\vd1.mp4" type="video/mp4">
+          Votre navigateur ne prend pas en charge les vidéos HTML5.
+        </video>
+
+
+        <form class="form">
+            <p class="title">Register</p>
+            <p class="message">Sign up now and get full access to our SMART STORE</p>
+            <div class="flex">
+              <label>
+                <input required placeholder="" type="text" class="input" id="firstname">
+                <span>Firstname</span>
+              </label>
+          
+              <label>
+                <input required placeholder="" type="text" class="input" id="lastname">
+                <span>Lastname</span>
+              </label>
+            </div>
+          
+            <label>
+              <input required placeholder="" type="tel" class="input" id="phone">
+              <span>Phone Number</span>
+            </label>
+          
+            <label>
+              <input required placeholder="" type="email" class="input" id="email">
+              <span>Email</span>
+            </label>
+          
+            <label>
+              <input required placeholder="" type="password" class="input" id="password">
+              <span>Password</span>
+            </label>
+          
+            <label>
+              <input required placeholder="" type="password" class="input" id="confirm-password">
+              <span>Confirm Password</span>
+            </label>
+          
+            <button type="button" class="submit">Submit</button>
+            <p class="signin">Already have an account? <a href="#" class="sign-in">Sign In</a></p>
+          </form>
+          
+
+</main>
+
+
+
+
+
+
+</body>
+
+  
+
+
+<script>
+document.querySelector('.submit').addEventListener('click', function (event) {
+    event.preventDefault(); // Empêche le comportement par défaut du formulaire
+  
+    // Récupération des champs du formulaire
+    const firstname = document.getElementById('firstname').value.trim();
+    const lastname = document.getElementById('lastname').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const confirmPassword = document.getElementById('confirm-password').value.trim();
+  
+    // Initialisation des variables de validation
+    let isValid = true;
+    let errorMessage = "";
+  
+    // Validation du prénom
+    if (firstname === "") {
+      isValid = false;
+      errorMessage += "Firstname is required.\n";
+    }
+  
+    // Validation du nom
+    if (lastname === "") {
+      isValid = false;
+      errorMessage += "Lastname is required.\n";
+    }
+  
+    // Validation du numéro de téléphone
+    const phoneRegex = /^[0-9]{8,15}$/; // Uniquement des chiffres, longueur entre 8 et 15
+    if (!phoneRegex.test(phone)) {
+      isValid = false;
+      errorMessage += "Phone number is invalid. It should contain 8-15 digits.\n";
+    }
+  
+    // Validation de l'email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      isValid = false;
+      errorMessage += "Invalid email format.\n";
+    }
+  
+    // Validation du mot de passe
+    if (password.length < 6) {
+      isValid = false;
+      errorMessage += "Password must be at least 6 characters long.\n";
+    }
+  
+    // Validation de la confirmation du mot de passe
+    if (password !== confirmPassword) {
+      isValid = false;
+      errorMessage += "Passwords do not match.\n";
+    }
+  
+    // Afficher les erreurs ou rediriger
+    if (!isValid) {
+      alert(errorMessage); // Affiche les erreurs sous forme d'alerte
+    } else {
+      console.log("All data is valid. Redirecting to index.html...");
+      window.location.href = 'index.html';
+    }
+  });
+  
+  // Gestion du clic sur le lien Sign In
+  document.querySelector('.sign-in').addEventListener('click', function (event) {
+    event.preventDefault(); // Empêche le comportement par défaut du lien
+    window.location.href = 'sign-in-page.html'; // Redirige vers la page sign-in-page.html
+  });
+</script>
+  
+</html>
